@@ -1,0 +1,18 @@
+{
+	"name": "Count Products by category",
+	"properties": {
+		"description": "Total Category of Products and their numbers ",
+		"content": {
+			"query": "-- This is auto-generated code\nSELECT\n    Category, COUNT(ProductID) AS Product_Numbers\nFROM\n    OPENROWSET(\n        BULK 'https://dlstoragegentwo.dfs.core.windows.net/turbo/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/master/Azure-Synapse/products.csv',\n        FORMAT = 'CSV',\n        HEADER_ROW = TRUE,\n        PARSER_VERSION = '2.0'\n    ) AS [result]\n    GROUP BY Category\n    ORDER BY Category ASC;\n\n\n\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
