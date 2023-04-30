@@ -3,7 +3,10 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "HttpServer1",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"URL1": "https://raw.githubusercontent.com"
+			}
 		},
 		"annotations": [],
 		"type": "DelimitedText",

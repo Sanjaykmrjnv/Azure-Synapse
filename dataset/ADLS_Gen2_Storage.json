@@ -10,6 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "Product",
+				"folderPath": "Data",
 				"fileSystem": "turbo"
 			},
 			"columnDelimiter": ",",
