@@ -18,7 +18,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "3e33f89b-ac51-4811-9efc-baae892e279f"
+				"spark.autotune.trackingId": "f2e0fdbb-e289-4f5f-a987-47edbd3716b4"
 			}
 		},
 		"metadata": {
@@ -59,9 +59,9 @@
 				"source": [
 					"%%pyspark\r\n",
 					"df = spark.sql('select * from Products.Count_Products_by_category')\r\n",
-					"df.write.mode('overwrite').csv('/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/master/Azure-Synapse/products.csv')"
+					"df.write.mode('overwrite').csv('/Data/Product1')"
 				],
-				"execution_count": 5
+				"execution_count": 1
 			}
 		]
 	}
