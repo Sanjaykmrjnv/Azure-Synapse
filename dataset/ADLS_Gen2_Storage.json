@@ -9,6 +9,10 @@
 			"FIlename": {
 				"type": "string",
 				"defaultValue": "Products"
+			},
+			"Directory": {
+				"type": "string",
+				"defaultValue": "Data"
 			}
 		},
 		"annotations": [],
@@ -20,7 +24,10 @@
 					"value": "@dataset().FIlename",
 					"type": "Expression"
 				},
-				"folderPath": "Data",
+				"folderPath": {
+					"value": "@dataset().Directory",
+					"type": "Expression"
+				},
 				"fileSystem": "turbo"
 			},
 			"columnDelimiter": ",",
