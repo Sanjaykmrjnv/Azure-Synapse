@@ -1,0 +1,68 @@
+{
+	"name": "Creating csv file for new table",
+	"properties": {
+		"description": "creating a CSV file for the Count_Products_by_category table",
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "spark",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "f2e0fdbb-e289-4f5f-a987-47edbd3716b4"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/d03e9c4f-96a7-4b3d-90eb-1410cd83e5fc/resourceGroups/AzureSynapse/providers/Microsoft.Synapse/workspaces/asynapseanalytics/bigDataPools/spark",
+				"name": "spark",
+				"type": "Spark",
+				"endpoint": "https://asynapseanalytics.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/spark",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "3.3",
+				"nodeCount": 10,
+				"cores": 4,
+				"memory": 28,
+				"automaticScaleJobs": false
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"microsoft": {
+						"language": "python"
+					}
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"df = spark.sql('select * from Products.Count_Products_by_category')\r\n",
+					"df.write.mode('overwrite').csv('/Data/Product1')"
+				],
+				"execution_count": 1
+			}
+		]
+	}
+}
