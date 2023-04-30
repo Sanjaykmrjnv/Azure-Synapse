@@ -58,6 +58,7 @@
 						"referenceName": "ADLS_Gen2_Storage",
 						"type": "DatasetReference",
 						"parameters": {
+							"FIlename": "Products",
 							"Directory": "Data"
 						}
 					}
