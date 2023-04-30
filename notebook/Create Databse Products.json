@@ -1,5 +1,5 @@
 {
-	"name": "Notebook 1",
+	"name": "Create Databse Products",
 	"properties": {
 		"description": "Load data into a data frame and create the database Products",
 		"nbformat": 4,
