@@ -1,7 +1,7 @@
 {
 	"name": "Notebook 1",
 	"properties": {
-		"description": "Load data into a data frame and perform operations",
+		"description": "Load data into a data frame and create the database Products",
 		"nbformat": 4,
 		"nbformat_minor": 2,
 		"bigDataPool": {
@@ -18,7 +18,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "9319e126-a1fc-4ea0-8deb-fc81f70196b1"
+				"spark.autotune.trackingId": "7248b67d-2259-42ac-b679-130f29092914"
 			}
 		},
 		"metadata": {
