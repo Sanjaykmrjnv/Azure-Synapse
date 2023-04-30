@@ -1,6 +1,7 @@
 {
-	"name": "Notebook 1",
+	"name": "Creating csv file for new table",
 	"properties": {
+		"description": "creating a CSV file for the Count_Products_by_category table",
 		"nbformat": 4,
 		"nbformat_minor": 2,
 		"bigDataPool": {
@@ -17,7 +18,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "489e7e22-10f3-4e92-ab8f-fb394cb9b5d6"
+				"spark.autotune.trackingId": "3e33f89b-ac51-4811-9efc-baae892e279f"
 			}
 		},
 		"metadata": {
