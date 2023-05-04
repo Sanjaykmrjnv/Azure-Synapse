@@ -41,7 +41,6 @@ The following use cases should be met to validate the completion of the project:
 + SQL pool has been used to analyze the data.
 + Spark pool is used to analyze the data.
 + Code Snippet is added to both the pool for analyzing the data.
-+ Discard all the changes and delete the resources.
 
 ## Conclusion
 This project provides an overview of how to use Azure Synapse Analytics for Integrated Data Analytics in the Azure subscription. By following the step-by-step instructions, you can learn how to ingest data into the synapse, analyze the data using SQL pool and Spark pool, and visualize the results in chart view.
